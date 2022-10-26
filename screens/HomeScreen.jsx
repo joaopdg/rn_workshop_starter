@@ -1,10 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
+import { StyleSheet, Text, View, Button } from "react-native";
+import React from "react";
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <Text>React Native Workshop</Text>
+      <Button
+        title="Pokemon List"
+        onPress={() => navigation.navigate("Pokemon List")}
+      />
+      <Button title="Search" onPress={() => navigation.navigate("Search")} />
     </View>
   );
 };
