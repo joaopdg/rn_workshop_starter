@@ -4,7 +4,7 @@ import React from "react";
 const HomeScreen = ({ navigation }) => {
   return (
     <View>
-      <Text>React Native Workshop</Text>
+      <Text>Welcome</Text>
       <Button
         title="Pokemon List"
         onPress={() => navigation.navigate("Pokemon List")}
